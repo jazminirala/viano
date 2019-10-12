@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--CONVIENE NO DEFINIR ALTURA DE LOS DIVS EN CSS SINO DEJAR QUE SE AJUSTEN ACORDE A SU CONTENIDO-->
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+
+
+	<link rel="stylesheet" href="styles/home.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<!--se coloca ../ para salir y encontrar la carpeta correspondiente -->
+
+	<!-- PRIMERO LO DIVIDIMOS EN SECCIONES HEADER - SECTION- FOOTER Y CREAR EL ESQUELETO -->
+
+	<title>Hello, world!</title>
+</head>
+
+<body>
+	<!-- <nav>
+		<ul class="navResponsive">
+			<li class="homeLi">Home</a></li>
+			<li class="historyLi">Nuestra Historia</a></li>
+			<li class="productLi">Productos y Servicios</a></li>
+			<li></a>
+				<ul classMenu">
+					<li class="rumpLi">Inscripción RUMP Ministerio de Producción</a></li>
+					<li class="intiLi">Reparador Auditado por Meteología Legal</a></li>
+				</ul>
+			</li>
+			<li class="contactLi">Contacto</a></li>
+		</ul>
+	</nav> -->
+
+	<nav class="menuNav">
+		<div class="logos">
+			<!--DIV de "division" -división . Sirve para crear secciones o agrupar contenidos. Puede contener: Texto, y/o cero o más elementos en bloque o en linea.
+								Atributos-->
+			<!-- CLASS	Asigna nombres de clases al elemento. Por defecto, clases CSS.-->
+			<img src="img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD">
+		</div>
+
+		<ul class="botonesNav">
+			<!--Crea un menú de navegación. <nav> <ul> <li> <a </a> </li> </ul> </nav>-->
+			<!--PARA CREAR VARIOS ELEMENTOS A LA VEZ * Y LA CANTIDAD A REPETIR
+										PARA BAJAR TODAS LAS ETIQUETAS AL MISMO TIEMPO ALT TE POSICIONAS Y ESCRIBIR EN SIMULTÁNEO ALT Y LUEGO ENTER-->
+			<li id="homeLi"><a>Home</a></li>
+			<li><a id="historyLi">Nuestra Historia</a></li>
+			<li id="productLi"><a>Productos y Servicios</a></li>
+			<li id="certLi"><a>Certificaciones</a>
+				<ul id="subMenu">
+					<li id="rumpLi"><a>Inscripción RUMP Ministerio de Producción</a></li>
+					<li id="intiLi"><a>Reparador Auditado por Meteología Legal</a></li>
+				</ul>
+			</li>
+			<li id="contactLi"><a>Contacto</a></li>
+		</ul>
+
+		<div class="logo2">
+			<!--el div abarca por default el ancho de la página-->
+			<img src="img/isologoblanco.png" alt="Logo ISO">
+		</div>
+
+	</nav>
+
+
+	<!--SHIFT TAB PARA TABULAR PARA ATRÁS Y TAB PARA TABULAR -->
+	<section id="section">
+
+		<div id="homeSection">
+			<h1>
+				Fabricación,
+			</h1>
+			<h1>
+				Calibración y Reparación
+			</h1>
+			<h1>
+				de Medidas de Capacidad
+			</h1>
+			<p>
+				Asesoramiento de normas de calidad ISO
+			</p>
+
+			<div class="logoSection">
+				<img src="img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD">
+			</div>
+		</div>
+
+
+		<!--SHIFT TAB PARA TABULAR PARA ATRÁS Y TAB PARA TABULAR -->
+
+		<div id="nuestraHistoria">
+			<h2>
+				Nuestra <br>
+				<span>Historia</span>
+			</h2>
+
+			<div class="textoSection2">
+				<p>
+					Somos una organización joven encabezada por dos socios,
+					combinando conocimientos en sistemas de calidad y reparación de
+					instrumentos de medición.
+				</p>
+				<p>
+					Contamos con amplia trayectoria en empresas líderes automotrices
+					y fábricas de instrumentos de medición. Además de amplíos
+					conocmientos en robótica y en máquinas de medir.
+				</p>
+				<p>
+					El desarrollo de las medidas de capacidad es una combinación de
+					Diseño, Sustentabilidad y desarrollo profesional de Nosotros.
+				</p>
+			</div>
+		</div>
+
+		<div id="productosSection">
+			<h2>
+				Producto
+			</h2>
+			<p>
+				Marca: VIANO
+			</p>
+			<p>
+				Modelo: DAMAR
+			</p>
+			<div class="productoViano">
+				<!--el div abarca por default el ancho de la página-->
+				<img src="img/producto.jpg" alt="Producto Viano">
+			</div>
+
+			<div class="center">
+				<!--el div abarca por default el ancho de la página-->
+				<div><img src="img/1_Carrusel.jpg" alt="Producto Viano Frente"></div>
+				<div><img src="img/2_Carrusel.jpg" alt="Producto lado izquierdo"></div>
+				<div><img src="img/3_Carrusel.jpg" alt="Producto lado derecho"></div>
+
+			</div>
+		</div>
+
+		<div class="certSection" id="rump">
+			<h2>
+				Inscripción RUMP 
+			</h2>
+			<p>
+				Ministerio de Producción
+			</p>
+
+			<div class="certSection2">
+				<p>
+					Viano, Medida de capacidad se encuentra
+					inscripto como reparador de surtidores y como
+					fabricante y reparador de medidas de capacidad
+					bajo el número de R.U.M.P. RL-2018 de acuerdo a
+					los requisitos establecidos por el Ministerio
+					de Producción de la República Argentina. 
+				</p>
+
+			</div>
+		</div>
+
+		<div class="certSection" id="inti">
+			<h2>
+				Reparador Auditado
+			</h2>
+			<p>
+				por Meteología legal INTI 
+			</p>
+			<div class="certSection2">
+				<p>
+					Viano, Medidas de Capacidad se encuentra
+					habilitado por Meteología Legal del Instituto
+					Nacional de Tecnología Industrial como
+					reparador de surtidores y medidas de
+					capacidad habiendo cumplido con la auditoría
+					del sistema de gestión de calidad y procesos
+					técnicos que establece el I.N.T.I.
+				</p>
+			</div>
+
+		</div>
+		<div id="contactSection">
+			<h2>
+				VIANO
+			</h2>
+			<div class="contactSection2">
+				<p>
+					Dirección: Zapiola 1144
+				</p>
+				<p>
+					San Justo - Partido de la Matanza
+				</p>
+				<p>
+					CP 1754- Provincia de Buenos Aires
+				</p>
+				<div class="textoAtencionAlCliente">
+					<h4>
+						Atención al Cliente
+					</h4>
+					<p>
+						Tel: + 54 9 11 3566 4142
+					</p>
+				</div>
+			</div>
+			<!-- FORMULARIO -->
+			<form action="/my-handling-form-page" method="post">
+				<div>
+					<label for="name">Nombre*</label>
+					<!--El elemento label representa una etiqueta que puede ser asociada a un control de formulario, y que se supone provee una descripción corta para éste. Los navegadores pueden enlazar ambos elementos permitiendo que los usuarios establezcan el enfoque sobre el control al hacer clic en su etiqueta.-->
+					<input type="text" id="name" />
+					<!--El elemento HTML <input> se usa para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que <input> funciona varía considerablemente dependiendo del valor de su atributo type.-->
+				</div>
+				<div>
+					<label for="mail">Email*</label>
+					<input type="email" id="mail" />
+				</div>
+				<div>
+					<label for="msg">Message*</label>
+					<textarea id="msg"></textarea>
+				</div>
+
+				<div class="button">
+					<!--Botón sin un comportamiento específico.-->
+					<button type="submit">Enviar</button>
+				</div>
+			</form>
+		</div>
+
+	</section>
+
+
+	<footer class="footer">
+
+		<div class="textoFooter">
+			<h3>
+				Contacto
+			</h3>
+			<p>
+				Tel: + 54 9 11 3566 4142
+			</p>
+		</div>
+
+		<div class="textoFooter">
+			<p>
+				Zapiola 1144, San Justo
+			</p>
+			<p>
+				Partido de la Matanza
+			</p>
+		</div>
+
+		<div class="textoFooter">
+			<p>
+				CP 1754- Provincia de Buenos Aires
+			</p>
+		</div>
+
+	</footer>
+
+	<script>
+		jQuery(document).ready(function () {
+			jQuery('.slick-carousel').slick();
+			$('.center').slick({
+				centerMode: true,
+				centerPadding: '60px',
+				slidesToShow: 3,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							arrows: false,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 3
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							arrows: false,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+
+		})
+
+	</script>
+		<script src="script.js"></script>
+
+</body>
+
+</html>
